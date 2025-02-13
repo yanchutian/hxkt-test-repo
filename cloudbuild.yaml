@@ -1,7 +1,6 @@
 steps:
   - name: 'ubuntu'
       #!/bin/bash
-
       echo "Base branch1: $_BASE_BRANCH"
       echo "Head branch1: $_HEAD_BRANCH"
 

@@ -3,5 +3,7 @@ steps:
     script: |
       #!/bin/bash
       echo "Hello, Cloud Build! This build was triggered by a Pull Request."
-logsBucket: 'gs://hxk-0213'
-serviceAccount: '801771751023-compute@developer.gserviceaccount.com'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+

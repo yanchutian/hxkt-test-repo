@@ -1,6 +1,5 @@
 steps:
   - name: 'ubuntu'
-    script: |
       #!/bin/bash
 
       echo "Base branch1: $_BASE_BRANCH"

@@ -1,0 +1,5 @@
+steps:
+  - name: 'ubuntu'
+    script: |
+      #!/bin/bash
+      echo "Hello, Cloud Build! This build was triggered by a Pull Request."

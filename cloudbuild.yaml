@@ -5,6 +5,4 @@ steps:
       echo "Hello, Cloud Build! This build was triggered by a Pull Request."
 
 options:
-  default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET
-logs_bucket: gs://hxk-0123
-
+  logging: CLOUD_LOGGING_ONLY

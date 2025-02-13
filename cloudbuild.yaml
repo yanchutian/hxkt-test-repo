@@ -2,6 +2,7 @@ steps:
   - name: 'ubuntu'
     script: |
       #!/bin/bash
+
       echo "Base branch: $_BASE_BRANCH"
       echo "Head branch: $_HEAD_BRANCH"
 
@@ -15,5 +16,9 @@ steps:
     script: |
       #!/bin/bash
       echo "second"
+
+
+
+
 options:
   logging: CLOUD_LOGGING_ONLY

@@ -1,5 +1,8 @@
 steps:
   - name: 'ubuntu'
+    args:
+      - 'echo'
+      - 'PR #$_PR_NUMBER from $_HEAD_BRANCH to $_BASE_BRANCH is being built.'
     script: |
       #!/bin/bash
 

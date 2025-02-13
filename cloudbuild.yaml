@@ -3,3 +3,6 @@ steps:
     script: |
       #!/bin/bash
       echo "Hello, Cloud Build! This build was triggered by a Pull Request."
+
+options:
+  logging: CLOUD_LOGGING_ONLY

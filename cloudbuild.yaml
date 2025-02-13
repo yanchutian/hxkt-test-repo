@@ -3,8 +3,8 @@ steps:
     script: |
       #!/bin/bash
 
-      echo "Base branch: $_BASE_BRANCH"
-      echo "Head branch: $_HEAD_BRANCH"
+      echo "Base branch1: $_BASE_BRANCH"
+      echo "Head branch1: $_HEAD_BRANCH"
 
       if [[ "$_BASE_BRANCH" == "test-pr-trigger" && "$_HEAD_BRANCH" == "main" ]]; then
         echo "main -> develop PR detected. Exiting build."

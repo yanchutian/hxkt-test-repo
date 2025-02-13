@@ -2,7 +2,23 @@ steps:
   - name: 'ubuntu'
     script: |
       #!/bin/bash
-      echo "Hello, Cloud Build! This build was triggered by a Pull Request."
+
+      echo "Base branch: $_BASE_BRANCH"
+      echo "Head branch: $_HEAD_BRANCH"
+
+      if [[ "$_BASE_BRANCH" == "test-pr-trigger" && "$_HEAD_BRANCH" == "main" ]]; then
+        echo "main -> develop PR detected. Exiting build."
+        exit 1  #  exit, the following steps will not be executed, but this build will be marked as failure 
+      fi
+      
+
+  - name: 'ubuntu'
+    script: |
+      #!/bin/bash
+      echo "second"
+
+
+
 
 options:
   logging: CLOUD_LOGGING_ONLY
